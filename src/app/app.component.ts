@@ -1,3 +1,5 @@
+import { CreneauxListPage } from './../pages/creneaux-list/creneaux-list';
+import { CreneauxAjoutPage } from './../pages/creneaux-ajout/creneaux-ajout';
 import { SeanceListPage } from './../pages/seance-list/seance-list';
 import { SeanceAjoutPage } from './../pages/seance-ajout/seance-ajout';
 import { SalleListPage } from './../pages/salle-list/salle-list';
@@ -170,6 +172,25 @@ export class MyApp {
 					displayName: 'Liste',
 					component: SeanceListPage
 				},
+			]
+		});
+
+					// Load options with nested items (with icons)
+		// -----------------------------------------------
+		this.options.push({
+			displayName: 'Creneaux',
+			subItems: [
+				{
+					iconName: 'clock',
+					displayName: 'Ajout',
+					component: CreneauxAjoutPage
+				},
+				{
+					iconName: 'list-box',
+					displayName: 'Liste',
+					component: CreneauxListPage
+				},
+				
 			]
 		});
 

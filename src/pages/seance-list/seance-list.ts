@@ -49,7 +49,6 @@ export class SeanceListPage {
       this.ngOnInit();
       refresher.complete();
     }, 2000);
-    this.navCtrl.setRoot('SalleListPage',{opt:{dismiss:false,redirect:"this.redirect"}});  
   }
 
   ngOnInit() {

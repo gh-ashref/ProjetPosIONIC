@@ -36,7 +36,7 @@ export class GroupeAjoutPage {
       });
       let alert = this.alertCtrl.create({
         title: 'New Friend!',
-        subTitle: 'L"ajout Enseignant Effectuer Avec Succes',
+        subTitle: 'L"ajout du groupe Effectuer Avec Succes',
         buttons: ['OK']
       });
 
