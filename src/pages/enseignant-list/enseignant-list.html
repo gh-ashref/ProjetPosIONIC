@@ -1,0 +1,40 @@
+<!--
+  Generated template for the EnseignantListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>enseignant/list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+
+
+    <ion-card>
+        <ion-card-header>
+          Liste Des Enseignants
+        </ion-card-header>
+      
+        <ion-list *ngFor=" let enseignant of enseignants ; let i = index" >
+          <button ion-item (click)="open(enseignant.id)">
+            <ion-icon name="contact" item-start></ion-icon>
+            {{enseignant.nom}}  {{enseignant.prenom}}
+          </button>
+     
+      
+        </ion-list>
+      </ion-card>
+</ion-content>

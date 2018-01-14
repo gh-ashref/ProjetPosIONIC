@@ -1,0 +1,47 @@
+<!--
+  Generated template for the EnseignantAjoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>enseignant/ajout</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    
+      <ion-item>
+        <ion-label stacked>Nom</ion-label>
+        <ion-input name="nom" [(ngModel)]="enseignant.nom" type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label stacked>prenom</ion-label>
+        <ion-input name="prenom" [(ngModel)]="enseignant.prenom" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>mail</ion-label>
+        <ion-input name="mail" [(ngModel)]="enseignant.mail" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>telephone</ion-label>
+        <ion-input name="telephone" [(ngModel)]="enseignant.telephone" type="text"></ion-input>
+      </ion-item>
+
+      <button (click)="ajout()" ion-button>Ajouter</button>
+      
+    </ion-list>
+
+</ion-content>

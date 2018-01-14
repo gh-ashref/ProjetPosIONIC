@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  
+    <ion-card>
+      <img src="assets/img/professor-header.jpg"/>
+      <div class="card-title">Enseignants</div>
+      <div class="card-subtitle">{{acc.ensignant}}</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/img/salle.jpg"/>
+      <div class="card-title">Salle</div>
+      <div class="card-subtitle">{{acc.salle}}</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/img/groupe.jpg"/>
+      <div class="card-title">Groupe</div>
+      <div class="card-subtitle">{{acc.groupe}}</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/img/classroom.jpg"/>
+      <div class="card-title">Seance</div>
+      <div class="card-subtitle">{{acc.seance}}</div>
+    </ion-card>
+</ion-content>
